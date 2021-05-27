@@ -24,6 +24,13 @@ for (var i = 0; i < myListLen; i++) {
   document.body.appendChild(newDiv);
 }
 
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    // This hides the address bar:
+    window.scrollTo(0, 1);
+  }, 0);
+});
+
 //original//
 // for (var i = 0; i < myListLen; i++) {
 //   slokaTittle = myList[i].Tittle;
